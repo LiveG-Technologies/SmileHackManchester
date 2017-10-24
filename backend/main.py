@@ -1,9 +1,10 @@
 try:
-    from 
+    from clockwork import clockwork
 except:
     print("You don't seem to have the required packages. Please run the following in a bash shell:")
     print("    sh installer.sh")
 
+api = clockwork.API("7fdd1c3ddb68b727b2e07c840138425e605032f6")
 name = raw_input("what is your name")
 print("hi there ",name)
 age = raw_input("how old are you")

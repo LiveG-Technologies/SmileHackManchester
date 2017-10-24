@@ -1,25 +1,41 @@
 <html>
-<head>
-  <title>Smile More</title>
-  <link rel="stylesheet" type="text/css" href="style.css"
-   </head>
-   <body>
+  <head>
+    <title>Smile More</title>
+    <link rel="stylesheet" type="text/css" href="style.css"
+    </head>
+    <body>
 
-   <ul>
-     <li><a href="index.html">Home</a></li>
-     <li><a class="active" href="gift.html">Send a Gift</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="Conversations.html">My Conversations</a></li>
-   </ul>
-   </style>
-</head>
-<body>
-  <div style="background-color: #FFBE0B; height: 10000px">
-    <div class="header">
-      <div style="position: relative; left: 30px; top: 10px">
-        <p> Smile </p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="gift.html">Send a Gift</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Conversations.html">My Conversations</a></li>
+    </ul>
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #FFBE0B; height: 10000px">
+      <div class="header">
+        <div style="position: relative; left: 30px; top: 10px">
+        <img src="logo.png" style="height: 100px">
+        Smile More
+      </div>
+      </div>
+        <div class="main">
+          <script>
+            function req(number, content) {
+              var xhr = new XMLHttpRequest();
+              xhr.open("GET", "https://api.clockworksms.com/http/send.aspx?key=7fdd1c3ddb68b727b2e07c840138425e605032f6&to=" + encodeURIComponent(number) + "&content=" + encodeURIComponent(content), true);
+              console.log("Sent request.");
+              xhr.send();
+            }
+          </script>
+          <p>Phone number: +<input type="text" id="number" value="44"></input>
+          <a href="javascript:;" onclick='req(document.getElementById("number").value, "Why does the chicken cross the road? To get to the other side!");'>Send Joke</a><br>
+          </p>
+          <img src="Clockwork.jpg" style="height: 300px;">
+          <img src="HackManchester.jpg" style="height: 300px;" style="text-align: right;">
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
