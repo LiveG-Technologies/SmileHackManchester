@@ -23,8 +23,14 @@ var functions = require('firebase-functions');
 
 exports.getMessages = functions.https.onRequest((req, res) => {
     // Create a new post reference with an auto-generated id
-    var messageList = firebase.database().ref('incoming/');
-    var newMessage = messageList.push();
-    newMessage.set(req.query);
+    var messageList = firebase.database().ref('incoming');
+    // messageList.once("value", function(data) {
+    // console.log(data)
+    // });
+    var newMessage = messageList.push({hello: "Good to see you!"});
+    // newMessage.set({
+    //     from: req.query.from,
+    //     content: req.query.content
+    // });
     res.status(200).end()
 });
