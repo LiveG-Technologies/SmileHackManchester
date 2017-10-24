@@ -19,6 +19,24 @@
         <img src="logo.png" style="height: 100px">
         Smile More
       </div>
+      </div>
+      <div class="main">
+        <script>
+            function req(number, content) {
+              var xhr = new XMLHttpRequest();
+              xhr.open("GET", "https://api.clockworksms.com/http/send.aspx?key=7fdd1c3ddb68b727b2e07c840138425e605032f6&to=" + encodeURIComponent(number) + "&content=" + encodeURIComponent(content), true);
+              console.log("Sent request.");
+              xhr.send();
+            }
+          </script>
+          <p>Phone number: +<input type="text" id="number" value="44"></input><br>
+          Message: +<input type="textarea" id="content" value="Hello!"></input><br>
+          <button onclick='req(document.getElementById("number").value, document.getElementById("content").value);'>Send Message</button><br>
+          </p>
+          <hr>
+      <img src="clockwork.png" style="height: 100px;">
+      <img src="hackmanchester.png" style="height: 100px;" style="text-align: right;">
+      </div>
     </div>
   </div>
 </body>

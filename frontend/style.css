@@ -17,7 +17,7 @@ div.header {
 div.main {
    text-align: left;
    padding-top: 30px;
-   width: 1400px;
+   width: 90%;
    font-size: 40pt;
    color: white;
    background-color: #F18805;
@@ -65,4 +65,8 @@ li a:hover:not(.active) {
 p {
     font-size: 30px;
     font-style: normal;
+}
+
+img {
+    height: 50px;
 }

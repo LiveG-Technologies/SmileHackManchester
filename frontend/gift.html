@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>
-    <div style="background-color: #FFBE0B; height: 10000px">
+    <div style="background-color: #FFBE0B; height: 100%">
       <div class="header">
         <div style="position: relative; left: 30px; top: 10px">
         <img src="logo.png" style="height: 100px">
@@ -30,11 +30,12 @@
               xhr.send();
             }
           </script>
-          <p>Phone number: +<input type="text" id="number" value="44"></input>
-          <a href="javascript:;" onclick='req(document.getElementById("number").value, "Why does the chicken cross the road? To get to the other side!");'>Send Joke</a><br>
+          <p>Phone number: +<input type="text" id="number" value="44"></input><br>
+          <button onclick='req(document.getElementById("number").value, "Why does the chicken cross the road? To get to the other side!");'>Send Joke</button><br>
           </p>
-          <img src="Clockwork.jpg" style="height: 300px;">
-          <img src="HackManchester.jpg" style="height: 300px;" style="text-align: right;">
+          <hr>
+          <img src="Clockwork.png" style="height: 100px;">
+          <img src="HackManchester.png" style="height: 100px;" style="text-align: right;">
       </div>
     </div>
   </body>
