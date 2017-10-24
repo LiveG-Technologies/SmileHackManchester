@@ -1,3 +1,9 @@
+try:
+    from 
+except:
+    print("You don't seem to have the required packages. Please run the following in a bash shell:")
+    print("    sh installer.sh")
+
 name = raw_input("what is your name")
 print("hi there ",name)
 age = raw_input("how old are you")
