@@ -22,6 +22,44 @@
       </div>
       <div class="main">
         <p>Your Gifts</p>
+      <h2>Alert Messages</h2>
+      <p>Click on the "x" symbol to close the alert message.</p>
+      <div class="alert">
+        <span class="closebtn">&times;</span>
+        <strong>New!</strong> Someone sent you a link!: <button><a href="https://www.youtube.com/watch?v=9sxMr4IdXaU"> Link</a></button>
+        <button><a href="conversations.html">Reply</a></button>
+      </div>
+
+      <div class="alert">
+        <span class="closebtn">&times;</span>
+        <strong>New!</strong> Someone sent you a joke: Did you hear about the italian chef?.....He pasta way.
+        <button><a href="conversations.html">Reply</a></button>
+      </div>
+
+      <div class="alert">
+        <span class="closebtn">&times;</span>
+        <strong>New!</strong> Someone sent you a message: If you are free this weekend, we can hang out!
+        <button><a href="conversations.html">Reply</a></button>
+      </div>
+
+      <div class="alert">
+        <span class="closebtn">&times;</span>
+        <strong>New!</strong> Someone sent you a image:   <img src="Cat1.jpg" style="height: 100px;">
+        <button><a href="conversations.html">Reply</a></button>
+      </div>
+
+      <script>
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+
+      for (i = 0; i < close.length; i++) {
+          close[i].onclick = function(){
+              var div = this.parentElement;
+              div.style.opacity = "0";
+              setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+      }
+      </script>
         <hr>
       <img src="clockwork.png" style="height: 100px;">
       <img src="hackmanchester.png" style="height: 100px;" style="text-align: right;">

@@ -70,3 +70,22 @@ p {
 img {
     height: 50px;
 }
+
+.alert {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-style: normal;
+    margin: 10px;
+}
+
+.closebtn {
+    padding-left: 15px;
+    color: red;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
